@@ -10,12 +10,12 @@ body {
 /* Edicion de primera seccion */
 
 .start{
-    background-image: url(imagenes/saludo-niña.png);
-    background-size: 25% auto; /* Ancho del 25% y altura automática */
+    background-image: url(imagenes/enfermero.png);
+    background-size: 17% auto; /* Ancho del 25% y altura automática */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: right center;
-    background-position-y: 130px;
-    background-color: #fccb38;
+    background-position-y: 150px;
+    background-color: #bddde6;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,15 +25,6 @@ body {
     transition: top 1s ease; /* Transición suave */
     width: 100%;
     height: 100%;
-}
-.inici{
-    background-image: url(imagenes/saludo.png);
-    background-size: 25% auto; /* Ancho del 25% y altura automática */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: left center;
-    background-position-y: 140px;
-    border-radius: 8px; /* Bordes redondeados */
-
 }
 
 /*imagen de logo */
@@ -70,7 +61,7 @@ a{
     text-decoration: none;
 }
 .encabezado ul li:hover{
-    background-color: #ffbf00;
+    background-color: #8cd3e6;
     box-shadow: black;
     border-radius: 15%;
     transform: scale(1.1);
@@ -126,12 +117,12 @@ nav {
 
 /* Edición de titulo*/
 h1{
-    font-size: 350%; /* Tamaño de la fuente*/
+    font-size: 270%; /* Tamaño de la fuente*/
     font-weight: bold;
     font-family:"Pacifico", serif ;
 }
 .slogan{
-    font-size: 120%;
+    font-size: 140%;
     font-weight: lighter;
     font-family:"Pacifico", serif ;
     
@@ -144,7 +135,7 @@ span{
 /* Intermedio */ /* olas entre secciones */
 .container {
     position: relative;
-    background: #fccb38;
+    background: #bddde6;
     height: 25vh;
 }
 
@@ -152,7 +143,7 @@ span{
     position: absolute;
     height: 137px;
     width: 100%;
-    background: #fccb38;
+    background: #bddde6;
     bottom: 0;
 }
 
@@ -173,7 +164,7 @@ span{
 .wave::after {
     width: 55%;
     height: 100%;
-    background-color: #fccb38;
+    background-color: #bddde6;
     left: -1.5%;
     top: 40%;
 }
@@ -353,7 +344,7 @@ span{
 /* Seccion dos */
 
 .secciones{
-    background-image: url(imagenes/caminando.png);
+    background-image: url(imagenes/aguja.png);
     background-size: 25% auto; /* Ancho del 25% y altura automática */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: left center;
