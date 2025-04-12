@@ -15,7 +15,7 @@ body {
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: right center;
     background-position-y: 175px;
-    background-position-x: 87%;
+    background-position-x: 80%;
     background-color: #bddde6;
     display: flex;
     flex-direction: column;
