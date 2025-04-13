@@ -11,11 +11,11 @@ body {
 
 .start{
     background-image: url(imagenes/enfermero.png);
-    background-size: 17% auto; /* Ancho del 25% y altura automática */
+    background-size: 15% auto; /* Ancho del 25% y altura automática */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: right center;
-    background-position-y: 175px;
-    background-position-x: 75%;
+    background-position-y: 150px;
+    background-position-x: 72%;
     background-color: #bddde6;
     display: flex;
     flex-direction: column;
@@ -541,14 +541,9 @@ span{
     margin-bottom: 0.5em;
 }
 
-.p1{
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.5em;
-    color: #452c2c;
-    font-size: 103%;
+.list-box{
+    list-style:circle;
 }
-
 /* Box N2 */
 
 .box2 img{
@@ -587,6 +582,14 @@ span{
     overflow: hidden;
     font-family: "Patrick Hand", serif;
 }
+.p1{
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #452c2c;
+    font-size: 103%;
+    list-style: circle;
+}
 .t1{
     text-align: center;
     font-family: "Patrick Hand", serif;
@@ -605,6 +608,7 @@ span{
 .span{
     font-weight:bold;
 }
+
 
 /* div seccion 3 con footer */
 
