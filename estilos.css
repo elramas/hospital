@@ -558,6 +558,9 @@ span{
     gap:20px;
     box-shadow: #000;
 }
+.box2-shadow{
+    display: none;
+}
 
 .lista ul{
     display: flex;
@@ -1019,5 +1022,43 @@ ul {
         margin: 0; /* Eliminar márgenes en el body */
         padding: 0; /* Eliminar padding en el body */
     }
+    .t2{
+        margin-top: 20px;
+    }
+    .secciones{
+        display: flex;
+        flex-direction: row;
+    }
+    .card{
+        width: 200px;
+        height: 300px;
+    }
 
+    .card4{
+        width: 200px;
+        height: 300px;
+    }
+    .queoferim{
+        background-image: none;
+    }
+    .boxes{
+        display: flex;
+        flex-direction: row;
+    }
+    .box1{
+        width: 310px;
+        height: auto;
+    }
+    .box2{
+        display: none;
+    }
+    .box2-shadow{
+        display: flex;
+        width: 425px;
+        height: 310px;
+    }
+    .box3{
+        width: 780px;
+        height: auto;
+    }
 }
