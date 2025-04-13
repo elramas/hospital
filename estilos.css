@@ -84,11 +84,49 @@ nav {
 }
 
 .menu-toggle {
-    display: none; /* Ocultar en pantallas grandes */
-    flex-direction: column; /* Disposición vertical de las barras */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el icono */
+    display: none;
+    position: relative;
+    width: 80px;  /* Tamaño del contenedor */
+    height: 80px; /* Tamaño del contenedor */
 }
 
+.heart {
+    position: absolute;
+    width: 40px;  /* Tamaño del corazón */
+    height: 40px; /* Tamaño del corazón */
+    background-color: red;
+    transform: rotate(-45deg);
+    animation: heartbeat 1s infinite; /* Efecto de latido */
+}
+
+.heart::before,
+.heart::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%; /* Hace que sea redondo */
+}
+
+.heart::before {
+    top: -20px; /* Sitúa la parte superior del corazón */
+    left: 0;
+}
+
+.heart::after {
+    left: 20px; /* Sitúa la parte derecha del corazón */
+    top: 0;
+}
+
+@keyframes heartbeat {
+    0%, 20%, 100% {
+        transform: scale(1); /* Escala normal */
+    }
+    10% {
+        transform: scale(1.1); /* Escala cuando late */
+    }
+}
 .bar {
     width: 30px;
     height: 3px;
@@ -516,13 +554,14 @@ span{
 .box2 img{
     position: relative;
     width: 425px;
-    height: 275px;
+    height: 310px;
     border-radius:10px;
     padding:2em 1.2em;
     margin:12px;
     z-index: 0;
     overflow:hidden;
     gap:20px;
+    box-shadow: #000;
 }
 
 .lista ul{
@@ -892,11 +931,20 @@ ul {
 
     .menu-toggle {
         display: flex; /* Mostrar el menú hamburguesa */
-        margin-right: 20px; 
-        cursor: pointer; /* Cambiar el cursor al pasar sobre el icono */
-        width: 100%; /* Asegurarse de que ocupe el 100% del ancho */
+        width: 60px;  /* Tamaño del contenedor en pantallas pequeñas */
+        height: 60px; /* Tamaño del contenedor en pantallas pequeñas */
     }
 
+    .heart {
+        width: 30px;  /* Tamaño del corazón en pantallas pequeñas */
+        height: 30px; /* Tamaño del corazón en pantallas pequeñas */
+    }
+
+    .heart::before,
+    .heart::after {
+        width: 30px;  /* Tamaño de las partes del corazón en pantallas pequeñas */
+        height: 30px; /* Tamaño de las partes del corazón en pantallas pequeñas */
+    }
     .nav-list.active{
         display: flex; /* Ocultar menú por defecto */
         flex-direction: column; 
@@ -958,4 +1006,14 @@ ul {
     .container2{
         display: none;
     }
+}
+/*Ajustes para que se vea bn desde VB*/
+@media only screen and (max-width: 1024px) {
+    body {
+        overflow-x: hidden; /* Prevenir el scroll horizontal */
+        width: 100%; /* Asegúrate de que el body ocupe el 100% */
+        margin: 0; /* Eliminar márgenes en el body */
+        padding: 0; /* Eliminar padding en el body */
+    }
+
 }
