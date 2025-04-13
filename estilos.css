@@ -1015,7 +1015,59 @@ ul {
     }
 }
 /*Ajustes para que se vea bn desde VB*/
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1124px) {
+    body {
+        overflow-x: hidden; /* Prevenir el scroll horizontal */
+        width: 100%; /* Asegúrate de que el body ocupe el 100% */
+        margin: 0; /* Eliminar márgenes en el body */
+        padding: 0; /* Eliminar padding en el body */
+    }
+    .t2{
+        margin-top: 20px;
+    }
+    .secciones{
+        background-size: 25% auto; /* Ancho del 25% y altura automática */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-position: left center;
+        background-position-y: 285px; 
+        display: flex;
+        flex-direction: row;
+    }
+    .card{
+        width: 200px;
+        height: 300px;
+    }
+
+    .card4{
+        width: 200px;
+        height: 300px;
+    }
+    .queoferim{
+        background-image: none;
+    }
+    .boxes{
+        display: flex;
+        flex-direction: row;
+    }
+    .box1{
+        width: 310px;
+        height: auto;
+    }
+    .box2{
+        display: none;
+    }
+    .box2-shadow{
+        display: flex;
+        width: 425px;
+        height: 310px;
+    }
+    .box3{
+        width: 780px;
+        height: auto;
+    }
+}
+/*Ajustes para que se vea bn desde VB*/
+@media only screen and (max-width: 824px) {
     body {
         overflow-x: hidden; /* Prevenir el scroll horizontal */
         width: 100%; /* Asegúrate de que el body ocupe el 100% */
