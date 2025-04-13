@@ -1015,7 +1015,7 @@ ul {
     }
 }
 /*Ajustes para que se vea bn desde VB*/
-@media only screen and (max-width: 2024px) {
+@media only screen and (max-width: 1524px) {
     body {
         overflow-x: hidden; /* Prevenir el scroll horizontal */
         width: 100%; /* Asegúrate de que el body ocupe el 100% */
