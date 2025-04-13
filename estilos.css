@@ -1026,6 +1026,10 @@ ul {
         margin-top: 20px;
     }
     .secciones{
+        background-size: 25% auto; /* Ancho del 25% y altura automática */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-position: left center;
+        background-position-y: 285px; 
         display: flex;
         flex-direction: row;
     }
